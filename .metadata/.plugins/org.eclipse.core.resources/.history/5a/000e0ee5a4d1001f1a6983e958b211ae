@@ -1,0 +1,64 @@
+package test;
+
+import Base.BaseTest;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import pages.DynamicPage;
+import pages.FramesPage;
+import pages.WindowsPage;
+import utils.ConfigReader;
+import utils.ReportManager;
+
+public class MultiElementTestCases extends BaseTest {
+
+    private DynamicPage dynamicPage;
+    private FramesPage framesPage;
+    private WindowsPage windowsPage;
+
+    @BeforeMethod
+    @Parameters("browser")
+    public void setUp(String browser) {
+        ConfigReader.props.setProperty("browser", browser);
+        initializeDriver();
+    }
+
+    @Test
+    public void testDynamicLoading() {
+        ReportManager.createTest("Dynamic Loading Test");
+        driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
+        dynamicPage = new DynamicPage(driver);
+        dynamicPage.clickStartButton();
+        String finishText = dynamicPage.getFinishText();
+
+        Assert.assertEquals(finishText, "Hello World!", "Finish text did not match.");
+    }
+
+    @Test
+    public void testFramesInteraction() {
+        ReportManager.createTest("Frames Interaction Test");
+        driver.get("https://the-internet.herokuapp.com/iframe");
+        framesPage = new FramesPage(driver);
+
+        framesPage.switchToFrame();
+        framesPage.enterTextInFrame("Testing frames interaction.");
+        String text = framesPage.getTextFromFrame();
+
+        Assert.assertEquals(text, "Testing frames interaction.", "Frame text did not match.");
+        framesPage.switchToDefaultContent();
+    }
+
+    @Test
+    public void testWindowSwitching() {
+        ReportManager.createTest("Window Switching Test");
+        driver.get("https://the-internet.herokuapp.com/windows");
+        windowsPage = new WindowsPage(driver);
+
+        windowsPage.clickLink();
+        windowsPage.switchToNewWindow();
+        String title = windowsPage.getWindowTitle();
+
+        Assert.assertEquals(title, "New Window", "Window title did not match.");
+    }
+} 
