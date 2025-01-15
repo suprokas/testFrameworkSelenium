@@ -31,7 +31,6 @@ INDEX VERSION 1.134+C:\suprokas\practice\testFrameworkSelenium\.metadata\.plugin
 4058311997.index
 2084437113.index
 4127961858.index
-1704979481.index
 3339176967.index
 1370761974.index
 2401217521.index

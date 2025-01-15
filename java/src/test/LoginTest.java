@@ -55,7 +55,11 @@ public class LoginTest extends BaseTest {
         loginPage.clickLogin();
         test.info("Clicked login button.");
 
+        //String screenshotPath = ReportManager.captureScreenshot(driver, "LoginTest_" + username);
+        //test.info("Screenshot taken:").addScreenCaptureFromPath(screenshotPath);
+        
         String screenshotPath = ReportManager.captureScreenshot(driver, "LoginTest_" + username);
+        // Attach screenshot to report using the correct relative path
         test.info("Screenshot taken:").addScreenCaptureFromPath(screenshotPath);
 
         String msg = loginPage.getFlashMessage();

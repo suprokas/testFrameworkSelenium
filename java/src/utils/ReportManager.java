@@ -32,6 +32,7 @@ public class ReportManager {
 
                     String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
                     String reportPath = "test-output2/ExtentReport_" + timestamp + ".html";
+                    logger.info("Report saved at: {}", reportPath);
                     ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
                     sparkReporter.config().setTheme(Theme.DARK);
                     sparkReporter.config().setDocumentTitle("Test Automation Report");
@@ -63,16 +64,27 @@ public class ReportManager {
 
     public static String captureScreenshot(WebDriver driver, String screenshotName) {
         String date = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-        String relativePath = "screenshots/" + screenshotName + "_" + date + ".png";
-        String fullPath = System.getProperty("user.dir") + "/" + relativePath;
+        String screenshotsDir = "test-output2/screenshots"; // Define a single directory for screenshots
+        String fileName = screenshotName + "_" + date + ".png";
+        String fullPath = System.getProperty("user.dir") + "/" + screenshotsDir + "/" + fileName;
+
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File destFile = new File(fullPath);
+
         try {
-            FileUtils.copyFile(srcFile, new File(fullPath));
+            // Ensure the directory structure exists
+            destFile.getParentFile().mkdirs();
+            FileUtils.copyFile(srcFile, destFile);
             logger.info("Screenshot saved at: {}", fullPath);
         } catch (IOException e) {
             logger.error("Failed to capture screenshot: {}", e.getMessage());
         }
-        return relativePath; // Return relative path for ExtentReports
+
+        // Return the relative path from the report's location
+        return "screenshots/" + fileName;
     }
+
+
+
 
 }
