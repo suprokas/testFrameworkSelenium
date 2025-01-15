@@ -4,27 +4,25 @@
   <test thread-count="3" parallel="tests" name="Edge Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="test.AdvancedTests">
+      <class name="test.LoginTest">
         <methods>
-          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="1"/>
           <include name="tearDown"/>
-          <include name="testFramesInteraction"/>
-          <include name="tearDownTest"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- test.AdvancedTests -->
+      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- Edge Test(failed) -->
   <test thread-count="3" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test.AdvancedTests">
+      <class name="test.LoginTest">
         <methods>
-          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="1"/>
+          <include name="SetUp"/>
           <include name="tearDown"/>
-          <include name="testFramesInteraction"/>
-          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- test.AdvancedTests -->
+      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Parallel Test Suite] -->

@@ -38,7 +38,12 @@
     </dependency>
     
     
-
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version> <!-- Replace with the latest version -->
+    <scope>provided</scope>
+</dependency>
     <!-- Logback Classic (Only SLF4J Binding) -->
     <dependency>
       <groupId>ch.qos.logback</groupId>

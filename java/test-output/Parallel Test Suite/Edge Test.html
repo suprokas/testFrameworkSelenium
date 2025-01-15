@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Edge Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 13 17:40:55 IST 2025</td>
+<td>Started on:</td><td>Tue Jan 14 16:11:05 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40049 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27657 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,56 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.AdvancedTests.testFramesInteraction()'><b>testFramesInteraction</b><br>Test class: test.AdvancedTests</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: MicrosoftEdge=131.0.2903.112)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f6c018378f7502c3fb3f149624bab473, clearElement {id=f.C8379C0CF6E7B3A2C95E7A9F67A34B7C.d.E4DC7C13F21EC7CDDFBA1F5E036D1B6E.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62100}, msedge: {msedgedriverVersion: 131.0.2903.146 (99fcb90c1ee..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62100/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f6c018378f7502c3fb3f149624bab473)] -&gt; id: tinymce]
-Session ID: f6c018378f7502c3fb3f149624bab473
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-	at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-	at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+<td title='test.LoginTest.testLogin()'><b>testLogin</b><br>Test class: test.LoginTest<br>Parameters: test, test!</td>
+<td><div><pre>java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+	at test.LoginTest.testLogin(LoginTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1371900339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1371900339'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: MicrosoftEdge=131.0.2903.112)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f6c018378f7502c3fb3f149624bab473, clearElement {id=f.C8379C0CF6E7B3A2C95E7A9F67A34B7C.d.E4DC7C13F21EC7CDDFBA1F5E036D1B6E.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62100}, msedge: {msedgedriverVersion: 131.0.2903.146 (99fcb90c1ee..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62100/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f6c018378f7502c3fb3f149624bab473)] -&gt; id: tinymce]
-Session ID: f6c018378f7502c3fb3f149624bab473
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-	at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-	at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace476458407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace476458407'><pre>java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at test.LoginTest.testLogin(LoginTest.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -147,8 +111,8 @@ Session ID: f6c018378f7502c3fb3f149624bab473
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>2</td>
-<td>test.AdvancedTests@5e21e98f</td></tr>
+<td>1</td>
+<td>test.LoginTest@4f4c4b1a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -159,15 +123,10 @@ Session ID: f6c018378f7502c3fb3f149624bab473
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.AdvancedTests.testWindowSwitching()'><b>testWindowSwitching</b><br>Test class: test.AdvancedTests</td>
+<td title='test.LoginTest.testLogin()'><b>testLogin</b><br>Test class: test.LoginTest<br>Parameters: tomsmith, SuperSecretPassword!</td>
 <td></td>
 <td>1</td>
-<td>test.AdvancedTests@5e21e98f</td></tr>
-<tr>
-<td title='test.AdvancedTests.testDynamicLoading()'><b>testDynamicLoading</b><br>Test class: test.AdvancedTests</td>
-<td></td>
-<td>6</td>
-<td>test.AdvancedTests@5e21e98f</td></tr>
+<td>test.LoginTest@4f4c4b1a</td></tr>
 </table><p>
 </body>
 </html>

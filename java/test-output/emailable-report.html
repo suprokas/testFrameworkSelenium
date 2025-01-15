@@ -9,68 +9,30 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Parallel Test Suite</th></tr>
-<tr><td><a href="#t0">Edge Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,049</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Chrome Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,044</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">81,093</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Edge Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">27,657</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Chrome Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,515</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">57,172</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Edge Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.AdvancedTests</td><td><a href="#m0">testFramesInteraction</a></td><td rowspan="1">1736770283524</td><td rowspan="1">2266</td></tr><tr><th colspan="4">Edge Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.AdvancedTests</td><td><a href="#m1">testDynamicLoading</a></td><td rowspan="1">1736770268263</td><td rowspan="1">6589</td></tr><tr class="passedeven"><td><a href="#m2">testWindowSwitching</a></td><td rowspan="1">1736770294353</td><td rowspan="1">1283</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.AdvancedTests</td><td><a href="#m3">testFramesInteraction</a></td><td rowspan="1">1736770284721</td><td rowspan="1">1849</td></tr><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.AdvancedTests</td><td><a href="#m4">testDynamicLoading</a></td><td rowspan="1">1736770269206</td><td rowspan="1">6338</td></tr><tr class="passedeven"><td><a href="#m5">testWindowSwitching</a></td><td rowspan="1">1736770295519</td><td rowspan="1">1071</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Edge Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.LoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1736851291244</td><td rowspan="1">1866</td></tr><tr><th colspan="4">Edge Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.LoginTest</td><td><a href="#m1">testLogin</a></td><td rowspan="1">1736851281358</td><td rowspan="1">1322</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.LoginTest</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1736851293924</td><td rowspan="1">1155</td></tr><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.LoginTest</td><td><a href="#m3">testLogin</a></td><td rowspan="1">1736851283655</td><td rowspan="1">1453</td></tr></tbody>
 </table>
-<h2>Edge Test</h2><h3 id="m0">test.AdvancedTests#testFramesInteraction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: MicrosoftEdge=131.0.2903.112)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f6c018378f7502c3fb3f149624bab473, clearElement {id=f.C8379C0CF6E7B3A2C95E7A9F67A34B7C.d.E4DC7C13F21EC7CDDFBA1F5E036D1B6E.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62100}, msedge: {msedgedriverVersion: 131.0.2903.146 (99fcb90c1ee..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62100/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f6c018378f7502c3fb3f149624bab473)] -&gt; id: tinymce]
-Session ID: f6c018378f7502c3fb3f149624bab473
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-	at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-	at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+<h2>Edge Test</h2><h3 id="m0">test.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test</td><td>test!</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+	at test.LoginTest.testLogin(LoginTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.AdvancedTests#testDynamicLoading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.AdvancedTests#testWindowSwitching</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Chrome Test</h2><h3 id="m3">test.AdvancedTests#testFramesInteraction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=131.0.6778.265)
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38f1c40bd0fad9ec07d17cae32268196, clearElement {id=f.209CE60879B915E75D5AFAD2DC130CB3.d.2CA2C1732A57CF3E9582CC719B9DC207.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62106/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38f1c40bd0fad9ec07d17cae32268196)] -&gt; id: tinymce]
-Session ID: 38f1c40bd0fad9ec07d17cae32268196
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-	at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-	at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+<h3 id="m1">test.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tomsmith</td><td>SuperSecretPassword!</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome Test</h2><h3 id="m2">test.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test</td><td>test!</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+	at test.LoginTest.testLogin(LoginTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.AdvancedTests#testDynamicLoading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">test.AdvancedTests#testWindowSwitching</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tomsmith</td><td>SuperSecretPassword!</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

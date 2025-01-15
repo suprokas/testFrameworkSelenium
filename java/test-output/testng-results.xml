@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T17:40:55 IST" name="Parallel Test Suite" finished-at="2025-01-13T17:41:36 IST" duration-ms="41044">
+  <suite started-at="2025-01-14T16:11:05 IST" name="Parallel Test Suite" finished-at="2025-01-14T16:11:35 IST" duration-ms="29515">
     <groups>
     </groups>
-    <test started-at="2025-01-13T17:40:55 IST" name="Edge Test" finished-at="2025-01-13T17:41:35 IST" duration-ms="40049">
-      <class name="test.AdvancedTests">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:40:55 IST" name="setUp" finished-at="2025-01-13T17:41:08 IST" duration-ms="12297" status="PASS">
+    <test started-at="2025-01-14T16:11:05 IST" name="Edge Test" finished-at="2025-01-14T16:11:33 IST" duration-ms="27657">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:05 IST" name="SetUp" finished-at="2025-01-14T16:11:21 IST" duration-ms="15462" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -17,20 +17,28 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testDynamicLoading()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:08 IST" name="testDynamicLoading" finished-at="2025-01-13T17:41:14 IST" duration-ms="6589" status="PASS">
+        </test-method> <!-- SetUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:21 IST" name="testLogin" data-provider="logindata" finished-at="2025-01-14T16:11:22 IST" duration-ms="1322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDynamicLoading -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:14 IST" name="tearDown" finished-at="2025-01-13T17:41:15 IST" duration-ms="763" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:22 IST" name="tearDown" finished-at="2025-01-14T16:11:23 IST" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:15 IST" name="tearDownTest" finished-at="2025-01-13T17:41:15 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:15 IST" name="setUp" finished-at="2025-01-13T17:41:23 IST" duration-ms="7890" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:23 IST" name="SetUp" finished-at="2025-01-14T16:11:31 IST" duration-ms="7834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,44 +48,30 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testFramesInteraction()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:23 IST" name="testFramesInteraction" finished-at="2025-01-13T17:41:25 IST" duration-ms="2266" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidElementStateException">
+        </test-method> <!-- SetUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:31 IST" name="testLogin" data-provider="logindata" finished-at="2025-01-14T16:11:33 IST" duration-ms="1866" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid element state
-  (Session info: MicrosoftEdge=131.0.2903.112)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f6c018378f7502c3fb3f149624bab473, clearElement {id=f.C8379C0CF6E7B3A2C95E7A9F67A34B7C.d.E4DC7C13F21EC7CDDFBA1F5E036D1B6E.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62100}, msedge: {msedgedriverVersion: 131.0.2903.146 (99fcb90c1ee..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62100/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f6c018378f7502c3fb3f149624bab473)] -> id: tinymce]
-Session ID: f6c018378f7502c3fb3f149624bab473]]>
+              <![CDATA[Login failed or unexpected message. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: MicrosoftEdge=131.0.2903.112)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f6c018378f7502c3fb3f149624bab473, clearElement {id=f.C8379C0CF6E7B3A2C95E7A9F67A34B7C.d.E4DC7C13F21EC7CDDFBA1F5E036D1B6E.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62100}, msedge: {msedgedriverVersion: 131.0.2903.146 (99fcb90c1ee..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62100/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (f6c018378f7502c3fb3f149624bab473)] -> id: tinymce]
-Session ID: f6c018378f7502c3fb3f149624bab473
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+              <![CDATA[java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.LoginTest.testLogin(LoginTest.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -100,46 +94,19 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFramesInteraction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:25 IST" name="tearDown" finished-at="2025-01-13T17:41:26 IST" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:26 IST" name="tearDownTest" finished-at="2025-01-13T17:41:26 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:26 IST" name="setUp" finished-at="2025-01-13T17:41:34 IST" duration-ms="8245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testWindowSwitching()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:34 IST" name="testWindowSwitching" finished-at="2025-01-13T17:41:35 IST" duration-ms="1283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWindowSwitching -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:35 IST" name="tearDown" finished-at="2025-01-13T17:41:35 IST" duration-ms="319" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@4f4c4b1a]" started-at="2025-01-14T16:11:33 IST" name="tearDown" finished-at="2025-01-14T16:11:33 IST" duration-ms="395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@5e21e98f]" started-at="2025-01-13T17:41:35 IST" name="tearDownTest" finished-at="2025-01-13T17:41:35 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.AdvancedTests -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Edge Test -->
-    <test started-at="2025-01-13T17:40:55 IST" name="Chrome Test" finished-at="2025-01-13T17:41:36 IST" duration-ms="41044">
-      <class name="test.AdvancedTests">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:40:55 IST" name="setUp" finished-at="2025-01-13T17:41:09 IST" duration-ms="13242" status="PASS">
+    <test started-at="2025-01-14T16:11:05 IST" name="Chrome Test" finished-at="2025-01-14T16:11:35 IST" duration-ms="29515">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:05 IST" name="SetUp" finished-at="2025-01-14T16:11:23 IST" duration-ms="17763" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,20 +116,28 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testDynamicLoading()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:09 IST" name="testDynamicLoading" finished-at="2025-01-13T17:41:15 IST" duration-ms="6338" status="PASS">
+        </test-method> <!-- SetUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:23 IST" name="testLogin" data-provider="logindata" finished-at="2025-01-14T16:11:25 IST" duration-ms="1453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDynamicLoading -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:15 IST" name="tearDown" finished-at="2025-01-13T17:41:15 IST" duration-ms="411" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:25 IST" name="tearDown" finished-at="2025-01-14T16:11:25 IST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:15 IST" name="tearDownTest" finished-at="2025-01-13T17:41:15 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:15 IST" name="setUp" finished-at="2025-01-13T17:41:24 IST" duration-ms="8754" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:25 IST" name="SetUp" finished-at="2025-01-14T16:11:33 IST" duration-ms="8342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,44 +147,30 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testFramesInteraction()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:24 IST" name="testFramesInteraction" finished-at="2025-01-13T17:41:26 IST" duration-ms="1849" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidElementStateException">
+        </test-method> <!-- SetUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:33 IST" name="testLogin" data-provider="logindata" finished-at="2025-01-14T16:11:35 IST" duration-ms="1155" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid element state
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38f1c40bd0fad9ec07d17cae32268196, clearElement {id=f.209CE60879B915E75D5AFAD2DC130CB3.d.2CA2C1732A57CF3E9582CC719B9DC207.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62106/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38f1c40bd0fad9ec07d17cae32268196)] -> id: tinymce]
-Session ID: 38f1c40bd0fad9ec07d17cae32268196]]>
+              <![CDATA[Login failed or unexpected message. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38f1c40bd0fad9ec07d17cae32268196, clearElement {id=f.209CE60879B915E75D5AFAD2DC130CB3.d.2CA2C1732A57CF3E9582CC719B9DC207.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\SUPROK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62106}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62106/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38f1c40bd0fad9ec07d17cae32268196)] -> id: tinymce]
-Session ID: 38f1c40bd0fad9ec07d17cae32268196
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-at pages.FramesPage.enterTextInFrame(FramesPage.java:28)
-at test.AdvancedTests.testFramesInteraction(AdvancedTests.java:61)
+              <![CDATA[java.lang.AssertionError: Login failed or unexpected message. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.LoginTest.testLogin(LoginTest.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -232,42 +193,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFramesInteraction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:26 IST" name="tearDown" finished-at="2025-01-13T17:41:27 IST" duration-ms="509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:27 IST" name="tearDownTest" finished-at="2025-01-13T17:41:27 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:27 IST" name="setUp" finished-at="2025-01-13T17:41:35 IST" duration-ms="8412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testWindowSwitching()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:35 IST" name="testWindowSwitching" finished-at="2025-01-13T17:41:36 IST" duration-ms="1071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWindowSwitching -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:36 IST" name="tearDown" finished-at="2025-01-13T17:41:36 IST" duration-ms="374" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@22f59fa]" started-at="2025-01-14T16:11:35 IST" name="tearDown" finished-at="2025-01-14T16:11:35 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.AdvancedTests@28194a50]" started-at="2025-01-13T17:41:36 IST" name="tearDownTest" finished-at="2025-01-13T17:41:36 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.AdvancedTests -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Chrome Test -->
   </suite> <!-- Parallel Test Suite -->
 </testng-results>
